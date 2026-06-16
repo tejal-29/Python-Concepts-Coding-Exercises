@@ -89,12 +89,12 @@ Comparision Operators compare two values and always return a boolean - ether tru
 
 Operators       Meaning                       e.g                     result
 
-==              Equal to
-!=             not equal to
->              greater than
-<              less than
->=             greater than or equal to
-<=             less than or equal to
+==              Equal to                  4=4                          True
+!=             not equal to               29 != 30                     True
+>              greater than               29 > 2                       True
+<              less than                  29 < 2                       False
+>=             greater than or equal to   30 >= 29                     True
+<=             less than or equal to      30 <= 30                     True
 
 9. Logical Operators
 logical Operators are used to combine multiple conditions together
