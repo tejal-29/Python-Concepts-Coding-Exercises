@@ -1,0 +1,211 @@
+1. what is variable
+
+A variable is a name of that stores a value in memory. 
+
+e.g name = "Sarthak"   :. name is the variable 
+age = 22
+gpa = 9.8
+is_student = True
+
+print(name)
+print(age)
+
+** Rules for Varibales naming **
+Must Start with a letter or underscore (_)
+can contain letter,digit and underscore
+cannot start with digit
+don't use python keywords (if, for, while)
+Names are case-sensitive -> age, Age, AGE all are different variables
+Hypes not allowes (-)
+dont start with numberr
+
+2. Data Types
+Data types are the data that stores in the variable means container
+
+Type         keyword     e.g            what stores
+
+Integer      int         29             Whole numbers
+Float        float       21.1           decimal numbers
+String       str         "HELLO"        text
+Boolean      bool        True/False     yes or no values
+
+
+3. print() function
+
+print(" ")
+print(" ",end=" "): sep and end
+print(f" "): f-strigs
+
+
+4. Type of conversion: Implicit vs Explicit
+
+Implicit - python does it automatically
+x = 21    # int
+y = 29.9  # float
+z = x + y  # python converts z to float automatically
+
+print (z)   # 50.9
+
+Explicit - we do it manually
+num_str = "29"
+num_int = int(num_str)   # 29
+num_flt = float(num_str) # 29.0
+so_str = str(100)        # "100"
+
+5. Interpretation error
+
+we need to check line by line if we got error on line one so entire code will throw eror
+
+6. Arithmetic Operators
+Arithmetic Operators are used to perform basic mathematical operations.
+
++  Additon
+-  Substraction
+*  multiplication
+/  division                10/3      3.333..         
+// floor division          10//3     3           division thats gives you asnwer without decimal num(its always gives you answer in integer small integer)
+%  modulus                 10%3      1            remainder
+** Exponentiation          2**4      16           2^4  (2 raise to 4)
+
+
+7. Operator Precedence
+
+When multiple Operators are in one expression, python follows a order
+
+Order (highest to lowest)
+** 
+*, /, //, %
++, -
+
+2 + 3 * 4 => 14
+
+Use the parenthesis to force the order you want
+
+((2+3)*4) =>  20
+
+
+8. Comparision Operators
+Comparision Operators compare two values and always return a boolean - ether true or False
+
+Operators       Meaning                       e.g                     result
+
+==              Equal to
+!=             not equal to
+>              greater than
+<              less than
+>=             greater than or equal to
+<=             less than or equal to
+
+9. Logical Operators
+logical Operators are used to combine multiple conditions together
+
+Operator       Meaning               returns true When
+
+and            Both conditions       both are True
+or             either conditions     at least one is True
+not            opposite              original is False
+
+
+10. Conditional Statements
+
+1] If Statement
+If the condition is True , the indented block run. if it is False, it's skip 
+
+(if you not write the code inside the block it will throw indentation error, it usually 4 spaces)
+
+2] If-else Statement
+we give two conditions
+
+3] If-elif-else Statement
+when you have more than two possible outcomes, use elif(else if)
+
+4] Nested if-else Statement
+place an if statement inside another if statement. called nesting and is useful 
+when a second condition only makes sense if the first one is alredy True
+
+5] Shorthand if-else (ternary Operator)
+in this we can simply write if-else in a single line. it's called Ternary Operator
+it is useful when you want to assign a value based on a condition
+
+      value_if_true if condition else value_if_false
+
+
+11. While, For Loops and Matrix
+
+1] While Loop : A while loop running as long as its condition is True.
+python checks the condition before every iteration. the moment it becomes false, the loop stops
+
+2] FOR loop
+for loop is used to iterate over a sequence - a range of numbers, a string, a list
+and so on. unlike while, you don't manage a counter manually - Python handles it for you.
+
+for variable in sequence # this block runs for each item in the sequence
+
+
+# looping over a range of numbers
+for i in range(1, 6):
+    print(i) 
+
+# output: 1 2 3 4 5
+
+
+
+12. Controlled statements : 
+
+1) BREAK Statement :
+
+ Break immediately stops the loop and the exits it, even if the condition
+ is still true or there are items left in the sequence.
+
+e,g 
+
+num = 1
+while num <= 10
+   if num == 5:
+       break        #stops the loop when num reaches 5
+    print(num)
+
+#output: 1 2 3 4
+
+2) CONTINUE Statement :
+ 
+ Continue skips the rest of the current iteration and jumps straight to the next one. 
+ the loop does not stop-it just skips that particular cycle.
+
+e.g 
+
+for i in range(1, 11):
+    if i % 2 == 0:
+        continue          # will skip even numbers
+    print(i)            
+
+# output: 1 3 5 7 9
+
+
+3] Nested Loops:
+ A nested loop is a loop inside another loop. The inner loop completes all its 
+ iteration for every single iteration of the outer loop
+
+for outer in range(1, 4):
+    for inner in range(1, 4):
+        print(f"outer={outer}, inner={inner}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
