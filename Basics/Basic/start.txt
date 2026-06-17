@@ -192,19 +192,62 @@ for outer in range(1, 4):
 
 
 
+13. Functions
+
+A function is a reusable block of code that perform a specific task, instead of writing the same logic again and again,
+you write it once inside a function and call it whenever you need it
+
+this follows he DRY priciple - Don't Repeat Yourself. it is one of the most important principles in programming.
+
+Functions also make your code easier to read, easier to debug and easier to maintain. if the logic needs to change, 
+you change it in one place not everywhere
 
 
+**Defining and calling a function
+
+You define a function using the def keyword followed by the function
+name and parenthesis. you call it by writing its name followed by parenthesis
 
 
+#Defining a function
+def function_name():
+        # code here
 
 
+#calling a function
+function_name()
 
 
+14. Parameters and Arguments
+
+A parameter is a variable listed inside the function definition.
+An Argument is the actual value you pass when calling the function.
+Parameters make functions flexible - the same function can work with different data every time
+
+def greet(name)     #name is the parameter
+    print(f"Name, {name}")
+
+greet("Sarthak")
+greet("Tejal")       #Tejal is the Argument
 
 
+15. return Statement
+
+The return statement sends a value back to whoever called the function.
+without return, a function just does something but gives nothing back.
+with return, you can use the result in the rest of your program.
+
+# with return - result can be stored and used
+def add(a, b):
+    return a + b
+
+result = add(10, 5)
+print(result)
+print(add(3, 7) * 2)
 
 
-
+Note : Once python hits a return statement, the function stops
+immediately, any code return inside the function will never run.
 
 
 
