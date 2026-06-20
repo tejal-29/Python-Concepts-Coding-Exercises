@@ -1,0 +1,1 @@
+print(f"Index = {index} and Number = {value}")

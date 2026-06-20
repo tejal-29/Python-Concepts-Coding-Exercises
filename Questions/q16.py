@@ -1,7 +1,7 @@
 #sum of all the numbers from 1 to 100
 
 start = int(input("Enter start number: "))
-end = int(input("Enter ed number: "))
+end = int(input("Enter end number: "))
 
 i = start
 total = 0

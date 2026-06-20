@@ -251,4 +251,175 @@ immediately, any code return inside the function will never run.
 
 
 
+16. Arguments:
+ 1] Default Arguments
 
+A Default argument is a value that a parameter takes automatically if no argument is passed for it
+when calling the function. It makes certain parameters optional.
+
+
+def greet(name, message="good Morning")     #name is the parameter
+    print(f"{message}, {name}")
+
+greet("Sarthak")                     #good Morning, Sarthak 
+greet("Tejal", "good night")         #good night, Tejal
+
+
+Note : Parameters with Default values must always come after parameters without default values.
+
+e.g def greet(message="heelo", name)     # it will give a syntax error
+ => def greet(name, message="heelo")     #correct
+
+ 
+ 2] keyword Argument or Positional Argument
+
+ keyword argument let you pass values to a function by Explicitly naming
+ the parameter. this means you can pass them in any order you are no longer dependent on position
+
+
+17. Local vs Global 
+
+ Scope refers to where a variable is accessible in code. A variable created inside a function is Local it only exits inside that function.
+ A variable created outside all function is Global it can be accessed from anywhere
+
+
+18. Lambda Function 
+ 
+ A lambda function is small anonymous function writtern in a single line, 
+ it is useful when you need a simple function for a short period and do not want to formally define it with def.
+
+ e.g 
+ # normal function
+ def square(n):
+     return n * n
+
+
+ #same thing as a lambda
+ square = lambda n: n * n
+
+ print(square(5))         #25
+
+ is_adult = lambda age: True if age >= 18 else False
+ print(is_adult(18))   #True
+
+
+ 19. Lists in Python
+
+ A variable stores one value at a time.
+ So A list is a collection that stores multiple values in a single variable, kept in a specific order
+
+ student = ["Tejal", "Sarthak", "Advika"]
+
+ all thre names stored in one variable. easy to manage , scale and read
+
+ key properties:
+  1) ordered :- Items stays in the exact order you put them in. the first item always first
+  2) mutable :- Can change, add, remove items even after the list created.
+  3) Allows Duplicates : the same value can appear more than once - list do not enforce uniqueness
+  4) Any data type : A single list can hold intergers, strigs, boolean or even other Lists
+
+ **** creating a list :
+
+ 1) Empty List : start with an empty list and add items later
+    my_list = []
+
+ 2) Numbers (integers/Floats) : Stores a sequence of numeric values
+    marks = [29, 21, 30, 81, 87]
+
+ 3) Text (Strings) : Hold a collection of words or phrases
+    cities = ["mumbai", "chennai", "delhi"]
+
+ 4) Mixed data types : Lists can contain different types of data in one go
+    profile = ["Sarthak", 29, 28.1, True]
+
+ 5) Lists with Duplicates : Python lists readily allow repeated values
+
+ 6) Checking Type and length : use type() to confirm it's a list
+                               len() to get the item count.
+
+    print(type(marks))         # <class 'list'>
+    print(len(marks))
+
+
+   **** List Operators: Joining and Repeating  --
+
+   1) Joining list with '+'  :- The '+' Operator concatenated (joins) two or more lists,
+                                creating an entirely new list. The original list remain unaffected.
+
+        a = [10, 30]
+        b = [29, 11, 3]
+        combined = a + b
+        print(combined)               # output : [10, 30, 29, 11, 3]
+
+    2) Repeating Lists with '*' :- The '*' operator repeats the elements of a list a specified number of times,
+                                   returning a new list. the multiplier must be an integer.
+
+        items = ["book", "pen"]
+        repeated = items * 2
+        print(repeated)                 #output: ["book", "pen", "book", "pen"]
+
+    
+
+    **** Built-in functions on lists 
+
+    1) len() - Get length   
+    returns the number of elements present in the list
+
+    2) min() - Smallest value
+    returns the Smallest item from a list of numbers
+
+    3) max() - Largest value
+    returns the largest item from a list of numbers
+
+    4) sum() - Sum of elements
+    returns the sum of all numeric elements in the list
+
+    5) sorted() - Create sorted list
+    returns a new list containing all items from the iterable in ascending order. 
+
+      calculating average marks - combining sum() and len() provides a simple way to calculate the average of numerical data in a list
+      
+      marks = [1, 2, 3, 4]
+      average = sum(marks) / len(marks)
+
+
+    **** Accessing list elements : indexing
+
+    Occupies specific position its called 'Index'
+    zero-based indexing, first element is at 0 index.
+
+    positive indexing: left to right :-
+
+    x = ["a", "b", "c", "d"]
+    #     0    1    2    3    
+
+    negative indexing: right to left
+    x = ["a", "b", "c", "d"]
+    #     -4   -3   -2   -1
+
+
+ ****** Slicing Lists :-
+
+  it allows you to extract a specific portion or 'slice' from a list.
+  it returns a new list containing only the selected elements
+
+  Slicing Syntax:
+                  'list_name[start:stop:step]
+
+ ***** Looping (iteration) through a list   
+    
+    Using a for loop - To iterate directly over the elements of a list. it automatically handles indexing and iteration until all items are processed..
+
+    Fruits = ["Mango", "Chiku", "Papaya"]
+    for fruit in Fruits:
+        print()
+
+
+    Using a while loop - It used to transverse a list. this method often requires manually managing an index to access elements and control the loop's progression.
+
+       Fruits = ["Mango", "Chiku", "Papaya"]
+       i = 0
+
+       while i < len(Fruits):
+           print(Fruits[i])
+           i += 1
