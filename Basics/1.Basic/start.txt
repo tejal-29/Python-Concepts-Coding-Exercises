@@ -52,9 +52,13 @@ num_int = int(num_str)   # 29
 num_flt = float(num_str) # 29.0
 so_str = str(100)        # "100"
 
+``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
 5. Interpretation error
 
 we need to check line by line if we got error on line one so entire code will throw eror
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 6. Arithmetic Operators
 Arithmetic Operators are used to perform basic mathematical operations.
@@ -67,6 +71,7 @@ Arithmetic Operators are used to perform basic mathematical operations.
 %  modulus                 10%3      1            remainder
 ** Exponentiation          2**4      16           2^4  (2 raise to 4)
 
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 7. Operator Precedence
 
@@ -83,6 +88,7 @@ Use the parenthesis to force the order you want
 
 ((2+3)*4) =>  20
 
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 8. Comparision Operators
 Comparision Operators compare two values and always return a boolean - ether true or False
@@ -96,6 +102,8 @@ Operators       Meaning                       e.g                     result
 >=             greater than or equal to   30 >= 29                     True
 <=             less than or equal to      30 <= 30                     True
 
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
 9. Logical Operators
 logical Operators are used to combine multiple conditions together
 
@@ -105,6 +113,7 @@ and            Both conditions       both are True
 or             either conditions     at least one is True
 not            opposite              original is False
 
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 10. Conditional Statements
 
@@ -129,6 +138,7 @@ it is useful when you want to assign a value based on a condition
 
       value_if_true if condition else value_if_false
 
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 11. While, For Loops and Matrix
 
@@ -148,7 +158,7 @@ for i in range(1, 6):
 
 # output: 1 2 3 4 5
 
-
+``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 12. Controlled statements : 
 
@@ -190,7 +200,7 @@ for outer in range(1, 4):
     for inner in range(1, 4):
         print(f"outer={outer}, inner={inner}")
 
-
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 13. Functions
 
@@ -217,6 +227,7 @@ def function_name():
 #calling a function
 function_name()
 
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 14. Parameters and Arguments
 
@@ -230,6 +241,7 @@ def greet(name)     #name is the parameter
 greet("Sarthak")
 greet("Tejal")       #Tejal is the Argument
 
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 15. return Statement
 
@@ -249,7 +261,7 @@ print(add(3, 7) * 2)
 Note : Once python hits a return statement, the function stops
 immediately, any code return inside the function will never run.
 
-
+````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 16. Arguments:
  1] Default Arguments
@@ -276,12 +288,14 @@ e.g def greet(message="heelo", name)     # it will give a syntax error
  keyword argument let you pass values to a function by Explicitly naming
  the parameter. this means you can pass them in any order you are no longer dependent on position
 
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 17. Local vs Global 
 
  Scope refers to where a variable is accessible in code. A variable created inside a function is Local it only exits inside that function.
  A variable created outside all function is Global it can be accessed from anywhere
 
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 18. Lambda Function 
  
@@ -302,8 +316,9 @@ e.g def greet(message="heelo", name)     # it will give a syntax error
  is_adult = lambda age: True if age >= 18 else False
  print(is_adult(18))   #True
 
+``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
- 19. Lists in Python
+19. Lists in Python
 
  A variable stores one value at a time.
  So A list is a collection that stores multiple values in a single variable, kept in a specific order
@@ -318,6 +333,7 @@ e.g def greet(message="heelo", name)     # it will give a syntax error
   3) Allows Duplicates : the same value can appear more than once - list do not enforce uniqueness
   4) Any data type : A single list can hold intergers, strigs, boolean or even other Lists
 
+ ```````````````````````````````````````````````
  **** creating a list :
 
  1) Empty List : start with an empty list and add items later
@@ -340,6 +356,7 @@ e.g def greet(message="heelo", name)     # it will give a syntax error
     print(type(marks))         # <class 'list'>
     print(len(marks))
 
+   ``````````````````````````````````````````````````````````````````````````````````
 
    **** List Operators: Joining and Repeating  --
 
@@ -358,7 +375,7 @@ e.g def greet(message="heelo", name)     # it will give a syntax error
         repeated = items * 2
         print(repeated)                 #output: ["book", "pen", "book", "pen"]
 
-    
+    ``````````````````````````````````````````````````````````````````````````````````````````````
 
     **** Built-in functions on lists 
 
@@ -397,6 +414,7 @@ e.g def greet(message="heelo", name)     # it will give a syntax error
     x = ["a", "b", "c", "d"]
     #     -4   -3   -2   -1
 
+ ````````````````````````````````````````````````````````````````````````````````````````````````````
 
  ****** Slicing Lists :-
 
@@ -405,6 +423,8 @@ e.g def greet(message="heelo", name)     # it will give a syntax error
 
   Slicing Syntax:
                   'list_name[start:stop:step]
+
+```````````````````````````````````````````````````````````````````````````````````````````````````````````
 
  ***** Looping (iteration) through a list   
     
@@ -423,3 +443,105 @@ e.g def greet(message="heelo", name)     # it will give a syntax error
        while i < len(Fruits):
            print(Fruits[i])
            i += 1
+
+    ``````````````````````````````````````````````````````````````````````````````````````````````````
+
+******* List Methods
+
+       List methods are built-in functions that operate directly on a list, allowing you to modify it in place.
+       unlike built-in functions like sorted() which return a new list. methods change the original list.
+
+    1) Adding Element
+
+    .append()  - Add to end              [Adds a single element to the end of the list]
+
+       fruits = ["Mango", "Cherry"]
+       fruits.append("apple")               // ["Mango", "Cherry", "apple"]
+
+    .insert()  - Add to Index            [Inserts an element at specified index. the first argument is the index, the second is the value]
+
+        fruits = ["Mango", "Cherry", "apple"]
+        fruits.insert(1, "banana")                      /// ["Mango", "banana", "Cherry", "apple"]
+
+    2) Removing elements
+
+    .remove() - Remove by value                [Removes the first occurrences of a specified value from the list. if the item is not found. it raises a ValueError.]
+
+    fruits = ["Mango", "banana", "Cherry", "apple"]
+    fruits.remove("Cherry")                  /// ["Mango", "banana", "apple"]
+
+    .pop() - Remove by Index (or Last)         [Removes and returns the element at a given index. if no index is specified it removes ans returns the last element. ]
+
+    fruits = ["Mango", "banana", "apple"]
+    popped_last = fruits.pop()              /// ["Mango", "banana"]
+
+
+    popped_first = fruits,pop(0)
+
+    ///["banana", "apple"]
+
+   ``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````                                                    
+   ****** list methods: Sorting, Reversing, Searching, and Counting
+
+   1) Sorting and Reversing elements:
+    
+    .sort() - Sort In-Place     [Sorts the elements of the list in ascending order directly, modifies original]
+
+    nums = [30, 20, 40, 50, 10]
+    nums.sort()             
+    print(nums)        // [10, 20, 30, 40, 50]
+
+    .sort(reverse=True)  - Sort descending     [Sorts the list descending order by setting the reverse parameter to True]
+     
+     nums = [10, 20, 30, 40, 50]    
+     nums.sort(reverse=True)
+     print(nums)
+
+    .reverse()  - Reverse In-Place             [Reverse the order of element in the list directly, modifying thhe original list]
+     
+     nums = [10, 20, 30, 40, 50]
+     nums.reverse()
+     print(nums)
+
+   2) Searching and Counting Elements 
+
+    .index() - Find Element index         [returns the index of the first occurrence of a specified value in the list]
+
+     fruits = ["Mango", "banana", "Cherry", "apple"] 
+     print(fruits.index("Mango"))             //1
+
+    .count() - Count element occurrences     [returns the number of times a specified value appears in the list]
+
+     fruits = ["Mango", "banana", "Cherry", "apple"]
+     print(fruits.count("Cherry"))
+
+
+    3) List methods: Copying and Clearing 
+
+    .copy() - Create a shallow copy     [Returns a new list that is a shallow copy of the original. this is crucial when you want to modify a list without affecting its source.]
+
+     og_list = [10, 30, 60]
+     new_list = og_list.copy()
+
+     new_list.append(100)
+     print(og_list)
+     print(new_list)
+
+
+    .clear() - Remove all Elements      [Remove all items from the list, effectively making it an empty list. this method modifies the list in place]
+
+     fruits = ["Mango", "banana", "Cherry", "apple"]
+     fruits.clear()
+     print(fruits)
+
+    `````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+    **** Membership Operators  :-- it's return a boolean value (true or false) based on the result
+
+    1) in - check for Membership                [This operator returns True if the specified value is found within the list, and False ]
+
+    flowers = ["rose", "tulip", "lily", "Lavender", "lotus"]
+    print("tulip" in flowers)
+    print("jasmine" in flowers)
+
+    2) not in - check for non-Membership        [this operator returns True if the specified value is NOT found within the list, and False otherwise]
